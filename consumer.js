@@ -20,7 +20,7 @@ const getFullMessage = function(data) {
 }
 
 
-require('amqplib').connect('amqp://localhost')
+require('amqplib').connect('amqp://user:bitnami@127.0.0.1')
 .then(conn =>conn.createChannel())
 .then(ch => {
 
